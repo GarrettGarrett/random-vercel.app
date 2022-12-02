@@ -26,7 +26,7 @@ function index() {
           description: "Discover random Vercel.app URLs ",
           images: [
             {
-              url: "/thumb.png",
+              url: "thumb.png",
               width: 800,
               height: 600,
               alt: "Random Vercel.app",
