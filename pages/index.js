@@ -2,7 +2,8 @@ import { useState } from "react";
 
 function index() {
   const [loading, setLoading] = useState(false);
-  const [urls, setUrls] = useState([]);
+  const [urls, setUrls] = useState([
+]);
 
   async function handleClick() {
     setLoading(true);
@@ -54,9 +55,11 @@ function index() {
               </p>
             )}
           </div>
-          {urls.map((url) => {
+          {urls.map((url, index) => {
             return (
               <div
+                key={index}
+                onClick={() => window.open(url, "_blank")}
                 className="mt-4 bg-white border-black border-4  p-4 w-full flex justify-center rounded-md m-auto hover:cursor-pointer h-20
              items-center  px-4 py-2 text-sm font-medium text-white shadow-sm
             "
