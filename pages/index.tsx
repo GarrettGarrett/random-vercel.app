@@ -15,7 +15,7 @@ function index() {
       <div className="h-screen mx-auto max-w-3xl flex justify-center">
         <div 
         onClick={async () => await handleClick()}
-        className="bg-black p-4 w-full flex justify-center rounded-md m-auto hover:cursor-pointer">
+        className="bg-black p-4 w-full flex justify-center rounded-md m-auto hover:cursor-pointer h-18">
           {
         loading == true ? 
         <svg className="animate-spin mx-auto h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
